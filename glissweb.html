@@ -1,0 +1,59 @@
+<html> 
+	<head> 
+		<title> Glissando Lake University </title>
+	</head>
+	<body>
+		<h1> Glissando Lake University </h1>
+		<p> The online university for tutoring from one of our experts.
+	
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Tutoring Types and Rates')" id="defaultOpen">Tutoring Types and Rates</button>
+  <button class="tablinks" onclick="openCity(event, 'About the Team')">About the Team</button>
+  <button class="tablinks" onclick="openCity(event, 'Frequently Asked Questions')">Frequently Asked Questions</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+</div>
+
+<div id="Tutoring Types and Rates" class="tabcontent">
+  <h3>One on One (most common)</h3>
+  <p> <I> starts at $35/hour. </I> </p>
+
+
+</div>
+
+<div id="About the Team" class="tabcontent">
+  <h3>Bryan Liu (Founder and CEO)</h3>
+	<img src="/Users/bliu48/Downloads/bryanliu.jpeg" alt="Bryan" width="256" height="192">
+  <p>I received my bachelor’s in mathematics in Spring of 2022 at Cal Poly in San Luis Obispo, California. For over half a decade I coached students, mostly at the high school level, on math and science. In my free time I enjoy playing the violin/piano, lifting weights, eating Korean barbeque with friends, writing fiction books, taking photos with my camera, and driving around at 1:00 AM enjoying the view of the city lights. </p> 
+</div>
+
+<div id="Frequently Asked Questions" class="tabcontent">
+  <h3>Have questions? Here are some answers!</h3>
+  <p>Q: why is private tutoring so expensive?</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>I'll be happy to answer any additional questions!</h3>
+  <p>phone: <I> 425-829-3403 </I> <br /> email: <I> bliu48@calpoly.edu </I> </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+			 </p>
+	</body> 
+</html>  
